@@ -56,7 +56,7 @@ class SAXXMLValidatorTest {
         saxParserFactory.setSchema(schema);
 
         DefaultHandler handler = new DefaultHandler();
-        
+
         XMLReader reader = saxParserFactory.newSAXParser().getXMLReader();                      //3
         reader.setContentHandler(handler);
         reader.setErrorHandler(handler);
